@@ -13,7 +13,7 @@
 %
 % See also c2d
 %
-% MATLAB Central File Exchange: 
+% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/90267-euler-c2d-transformation-c2d_euler
 % GitHub: https://github.com/tamaskis/c2d_euler-MATLAB
 %
 % See "DOCUMENTATION.pdf" for additional documentation and examples. 
