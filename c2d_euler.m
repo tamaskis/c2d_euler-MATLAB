@@ -11,22 +11,25 @@
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/90267-euler-c2d-transformation-c2d_euler
 % GitHub: https://github.com/tamaskis/c2d_euler-MATLAB
 %
-% See "DOCUMENTATION.pdf" for additional documentation and examples. 
-% Examples can also be found in EXAMPLES.mlx. Both of these files are 
-% included with the download.
+% See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
+% documentation. Both of these files are included with the download.
 %
-% Copyright (c) 2021 Tamas Kis
-% Last Update: 2021-05-31
+% Copyright © 2021 Tamas Kis
+% Last Update: 2021-06-08
 %
 %--------------------------------------------------------------------------
 %
+% -------
 % INPUTS:
-%   Hs      continous transfer function
-%   T       (1x1) sampling period
-%   type    'forward' or 'backward'
+% -------
+%   Hs      - (tf) continous transfer function
+%   T       - (1×1) sampling period
+%   type    - (char) 'forward' or 'backward'
 %
+% --------
 % OUTPUTS:
-%   Hz      discrete transfer function
+% --------
+%   Hz      - (tf) discrete transfer function
 %
 %==========================================================================
 function Hz = c2d_euler(Hs,T,type)
