@@ -17,6 +17,7 @@ Transforms a continuous transfer function to a discrete transfer function using 
 `Hz = c2d_euler(Hs,T,'backward')` returns the discrete transfer function `Hz` obtained by applying the backward Euler (i.e. backward difference) transformation to a continuous transfer function `Hs`, where `T` is the sampling period.
 
 
-## Additional Documentation and Examples
+## Examples and Additional Documentation
 
-See "DOCUMENTATION.pdf" for additional documentation and examples.
+   -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples.
+   -  See "DOCUMENTATION.pdf" for additional documentation.
