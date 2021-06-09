@@ -8,14 +8,16 @@
 %
 % See also c2d
 %
+% Copyright © 2021 Tamas Kis
+% Last Update: 2021-06-09
+%
+%--------------------------------------------------------------------------
+%
 % MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/90267-euler-c2d-transformation-c2d_euler
 % GitHub: https://github.com/tamaskis/c2d_euler-MATLAB
 %
 % See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
 % documentation. Both of these files are included with the download.
-%
-% Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-08
 %
 %--------------------------------------------------------------------------
 %
