@@ -10,7 +10,7 @@
 %
 % Copyright © 2021 Tamas Kis
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-04
+% Last Update: 2021-07-05
 %
 %--------------------------------------------------------------------------
 %
@@ -22,16 +22,16 @@
 %
 %--------------------------------------------------------------------------
 %
-% -------
-% INPUTS:
-% -------
+% ------
+% INPUT:
+% ------
 %   Hs      - (tf) continous transfer function
 %   T       - (1×1) sampling period
 %   type    - (char) 'forward' or 'backward'
 %
-% --------
-% OUTPUTS:
-% --------
+% -------
+% OUTPUT:
+% -------
 %   Hz      - (tf) discrete transfer function
 %
 %==========================================================================
