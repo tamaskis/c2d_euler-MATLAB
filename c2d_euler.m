@@ -6,10 +6,11 @@
 %   Hz = c2d_euler(Hs,T,'forward')
 %   Hz = c2d_euler(Hs,T,'backward')
 %
-% See also c2d
+% See also c2d.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-06-09
+% Contact: tamas.a.kis@outlook.com
+% Last Update: 2021-07-04
 %
 %--------------------------------------------------------------------------
 %
