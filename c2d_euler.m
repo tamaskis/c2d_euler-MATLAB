@@ -10,7 +10,7 @@
 %
 % Copyright © 2021 Tamas Kis
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-05
+% Last Update: 2021-07-09
 %
 %--------------------------------------------------------------------------
 %
@@ -41,7 +41,7 @@ function Hz = c2d_euler(Hs,T,type)
     z = sym('z');
     
     % specified Euler approximation of s
-    if strcmp(type,'backward')
+    if strcmpi(type,'backward')
         s = (z-1)/(T*z);
     else
         s = (z-1)/T;
