@@ -20,4 +20,4 @@ Transforms a continuous transfer function to a discrete transfer function using 
 ## Examples and Additional Documentation
 
    -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples.
-   -  See "DOCUMENTATION.pdf" (included with download, also available at https://github.com/tamaskis/c2d_euler-MATLAB/blob/main/DOCUMENTATION.pdf) for additional documentation.
+   -  See ["Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf"](https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf) (also included with download) for the technical documentation.

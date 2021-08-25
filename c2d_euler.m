@@ -9,16 +9,18 @@
 % See also c2d.
 %
 % Copyright © 2021 Tamas Kis
+% Last Update: 2021-08-24
+% Website: tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
-% Last Update: 2021-07-09
 %
-%--------------------------------------------------------------------------
+% TECHNICAL DOCUMENTATION:
+% https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf
 %
-% MATLAB Central File Exchange: https://www.mathworks.com/matlabcentral/fileexchange/90267-euler-c2d-transformation-c2d_euler
-% GitHub: https://github.com/tamaskis/c2d_euler-MATLAB
-%
-% See EXAMPLES.mlx for examples and "DOCUMENTATION.pdf" for additional 
-% documentation. Both of these files are included with the download.
+% REFERENCES:
+%   [1] Franklin et. al., "Digital Control of Dynamic Systems", 3rd Ed.
+%   [2] https://www.mathworks.com/matlabcentral/answers/96275-how-can-i-convert-a-transfer-function-object-from-the-control-system-toolbox-into-a-symbolic-object
+%   [3] https://gist.github.com/maruta/1035254
+%   [4] https://www.mathworks.com/matlabcentral/fileexchange/27302-syms-to-tf-conversion
 %
 %--------------------------------------------------------------------------
 %
@@ -26,7 +28,7 @@
 % INPUT:
 % ------
 %   Hs      - (tf) continous transfer function
-%   T       - (1×1) sampling period
+%   T       - (1×1 double) sampling period
 %   type    - (char) 'forward' or 'backward'
 %
 % -------
