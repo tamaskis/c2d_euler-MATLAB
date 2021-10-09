@@ -9,7 +9,7 @@
 % See also c2d.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-08-27
+% Last Update: 2021-10-09
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
@@ -27,17 +27,31 @@
 % ------
 % INPUT:
 % ------
-%   Hs      - (tf) continous transfer function
+%   Hs      - (1×1 tf or zpk) continous transfer function
 %   T       - (1×1 double) sampling period
 %   type    - (char) 'forward' or 'backward'
+%   output  - (OPTIONAL) (char) specifies output type ('tf' or 'zpk')
 %
 % -------
 % OUTPUT:
 % -------
-%   Hz      - (tf) discrete transfer function
+%   Hz      - (1×1 tf or zpk) discrete transfer function
 %
 %==========================================================================
-function Hz = c2d_euler(Hs,T,type)
+function Hz = c2d_euler(Hs,T,type,output)
+    
+    % ----------------------------------------------------
+    % Sets unspecified parameters to their default values.
+    % ----------------------------------------------------
+    
+    % defaults "output" to 'tf'
+    if (nargin < 4) || isempty(output)
+        output = 'tf';
+    end
+    
+    % --------------------------------------
+    % Continuous-to-discrete transformation.
+    % --------------------------------------
     
     % symbolic variable for z;
     z = sym('z');
@@ -62,7 +76,13 @@ function Hz = c2d_euler(Hs,T,type)
     num = sym2poly(sym_num);
     den = sym2poly(sym_den);
 
-    % creates discrete transfer function object
+    % creates discrete transfer function model
     Hz = tf(num,den,T);
+    
+    % converts discrete transfer function model to discrete zero-pole-gain
+    % model if specified
+    if strcmpi(output,'zpk')
+        Hz = zpk(Hz);
+    end
     
 end
