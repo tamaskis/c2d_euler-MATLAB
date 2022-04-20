@@ -9,18 +9,16 @@
 % See also c2d.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2021-10-09
+% Last Update: 2022-04-20
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
 % https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf
 %
-% REFERENCES:
-%   [1] Franklin et. al., "Digital Control of Dynamic Systems", 3rd Ed.
-%   [2] https://www.mathworks.com/matlabcentral/answers/96275-how-can-i-convert-a-transfer-function-object-from-the-control-system-toolbox-into-a-symbolic-object
-%   [3] https://gist.github.com/maruta/1035254
-%   [4] https://www.mathworks.com/matlabcentral/fileexchange/27302-syms-to-tf-conversion
+% REQUIREMENTS:
+%   • Control System Toolbox
+%   • Symbolic Math Toolbox
 %
 %--------------------------------------------------------------------------
 %
@@ -30,7 +28,7 @@
 %   Hs      - (1×1 tf or zpk) continous transfer function
 %   T       - (1×1 double) sampling period
 %   type    - (char) 'forward' or 'backward'
-%   output  - (OPTIONAL) (char) specifies output type ('tf' or 'zpk')
+%   output  - (char) (OPTIONAL) specifies output type ('tf' or 'zpk')
 %
 % -------
 % OUTPUT:
@@ -40,18 +38,10 @@
 %==========================================================================
 function Hz = c2d_euler(Hs,T,type,output)
     
-    % ----------------------------------------------------
-    % Sets unspecified parameters to their default values.
-    % ----------------------------------------------------
-    
-    % defaults "output" to 'tf'
+    % defaults "output" to 'tf' if not input
     if (nargin < 4) || isempty(output)
         output = 'tf';
     end
-    
-    % --------------------------------------
-    % Continuous-to-discrete transformation.
-    % --------------------------------------
     
     % symbolic variable for z;
     z = sym('z');
@@ -75,7 +65,7 @@ function Hz = c2d_euler(Hs,T,type,output)
     [sym_num,sym_den] = numden(Hz);
     num = sym2poly(sym_num);
     den = sym2poly(sym_den);
-
+    
     % creates discrete transfer function model
     Hz = tf(num,den,T);
     
