@@ -35,3 +35,7 @@ $$s\leftarrow\frac{z-1}{Tz}\quad\quad\therefore H(z)=H(s)\big\rvert_{s=\frac{z-1
 ## Examples
 
    -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples.
+
+## References
+
+   1. Gene F. Franklin, J. David Powell, and Michael Workman. Digital Control of Dynamic Systems. 3rd. Half Moon Bay, CA: Ellis-Kagle Press, 1998.
