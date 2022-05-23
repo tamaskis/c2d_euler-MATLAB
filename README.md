@@ -32,7 +32,6 @@ $$s\leftarrow\frac{z-1}{T}\quad\quad\therefore H(z)=H(s)\big\rvert_{s=\frac{z-1}
 $$s\leftarrow\frac{z-1}{Tz}\quad\quad\therefore H(z)=H(s)\big\rvert_{s=\frac{z-1}{Tz}}$$
 
 
-## Examples and Additional Documentation
+## Examples
 
    -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples.
-   -  See ["Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf"](https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf) (also included with download) for the technical documentation.
