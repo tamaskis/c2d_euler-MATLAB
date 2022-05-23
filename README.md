@@ -24,15 +24,12 @@ Consider a continuous transfer function $H(s)$ that we wish to transform to a di
 
 ### Forward Euler:
 
-$$s \; \leftarrow \frac{z-1}{T}\quad\quad\therefore  H(z) = H(s)\big\rvert_{s=\frac{z-1}{T}}$$
-
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
-
+$$s\leftarrow\frac{z-1}{T}\quad\quad\therefore H(z)=H(s)\big\rvert_{s=\frac{z-1}{T}}$$
 
 
 ### Backward Euler:
 
-$$s \leftarrow \frac{z-1}{Tz}\quad\quad\therefore  H(z) = H(s)\big\rvert_{s=\frac{z-1}{Tz}}$$
+$$s\leftarrow\frac{z-1}{Tz}\quad\quad\therefore H(z)=H(s)\big\rvert_{s=\frac{z-1}{Tz}}$$
 
 
 ## Examples and Additional Documentation
