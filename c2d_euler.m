@@ -9,12 +9,12 @@
 % See also c2d.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2022-04-20
+% Last Update: 2022-07-06
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
-% https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf
+% https://tamaskis.github.io/files/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf
 %
 % REQUIREMENTS:
 %   • Control System Toolbox
@@ -28,7 +28,7 @@
 %   Hs      - (1×1 tf or zpk) continous transfer function
 %   T       - (1×1 double) sampling period
 %   type    - (char) 'forward' or 'backward'
-%   output  - (char) (OPTIONAL) specifies output type ('tf' or 'zpk')
+%   output  - (OPTIONAL) (char) specifies output type ('tf' or 'zpk')
 %
 % -------
 % OUTPUT:

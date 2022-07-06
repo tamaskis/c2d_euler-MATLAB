@@ -20,4 +20,4 @@ Transforms a continuous transfer function to a discrete transfer function using 
 ## Examples and Additional Documentation
 
    -  See "EXAMPLES.mlx" or the "Examples" tab on the File Exchange page for examples.
-   -  See ["Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf"](https://tamaskis.github.io/documentation/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf) (also included with download) for the technical documentation.
+   -  See ["Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf"](https://tamaskis.github.io/files/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf) (also included with download) for the technical documentation.
