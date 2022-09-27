@@ -9,14 +9,14 @@
 % See also c2d.
 %
 % Copyright © 2021 Tamas Kis
-% Last Update: 2022-07-06
+% Last Update: 2022-09-26
 % Website: https://tamaskis.github.io
 % Contact: tamas.a.kis@outlook.com
 %
 % TECHNICAL DOCUMENTATION:
 % https://tamaskis.github.io/files/Continuous_to_Discrete_Transfer_Function_Transformation_Using_the_Euler_Methods.pdf
 %
-% REQUIREMENTS:
+% DEPENDENCIES:
 %   • Control System Toolbox
 %   • Symbolic Math Toolbox
 %
