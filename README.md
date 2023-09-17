@@ -3,18 +3,23 @@
 Transforms a continuous transfer function to a discrete transfer function using the forward and backward Euler methods.
 
 
-
 ## Syntax
 
-`Hz = c2d_euler(Hs,T,'forward')` \
-`Hz = c2d_euler(Hs,T,'backward')`
+`Hz = c2d_euler(Hs,T,type)` \
+`Hz = c2d_euler(Hs,T,type,output,normalize)`
 
 
-## Description
+## Inputs
 
-`Hz = c2d_euler(Hs,T,'forward')` returns the discrete transfer function `Hz` obtained by applying the forward Euler (i.e. forward difference) transformation to a continuous transfer function `Hs`, where `T` is the sampling period.
+- `Hs` (1×1 `'tf'` or `'zpk'`): continuous transfer function
+- `T` (1×1 double): sampling period
+- `type` (`char` array): `'forward'` or `'backward`
+- `output` (OPTIONAL) (`char` array): specifies output type (`'tf'` or `'zpk'`) (defaults to `'tf'`)
+- `normalize` (OPTIONAL) (1×1 `logical`) `true` if transfer function should be normalized, `false` otherwise (defaults to `false`)
 
-`Hz = c2d_euler(Hs,T,'backward')` returns the discrete transfer function `Hz` obtained by applying the backward Euler (i.e. backward difference) transformation to a continuous transfer function `Hs`, where `T` is the sampling period.
+## Outputs
+
+- `Hz` (1×1 `tf` or `zpk`): discrete transfer function
 
 
 ## Examples and Additional Documentation
